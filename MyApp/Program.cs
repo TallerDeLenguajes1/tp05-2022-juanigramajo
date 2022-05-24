@@ -1,9 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+// Console.WriteLine("Hello, World!");
 
 
 
-Console.WriteLine("Trying second commit");
+// Console.WriteLine("Trying second commit");
 
 
 
@@ -14,7 +14,7 @@ Console.WriteLine("Usted escribió [" + texto + "]. | Y el número es [" + numer
 
 
 
-Console.WriteLine("Ingrese un número: ");
+/* Console.WriteLine("Ingrese un número: ");
 string numero1 = Console.ReadLine();
 Console.WriteLine("Ingrese otro número: ");
 string numero2 = Console.ReadLine();
@@ -35,4 +35,24 @@ double Cuadrado(double a){
 
 
     return a*a;
+} */
+
+
+
+//-------------------EJERCICIO 1-------------------
+
+Console.WriteLine("Ingrese un número: ");
+string num = Console.ReadLine();
+
+int numInvertir = Convert.ToInt32(num);
+int resto, numInvertido=0;
+
+while (numInvertir > 0){
+    
+    resto = numInvertir % 10;
+    numInvertir = numInvertir / 10;
+    numInvertido = numInvertido * 10 + resto;
+    
 }
+
+Console.WriteLine(numInvertido);
