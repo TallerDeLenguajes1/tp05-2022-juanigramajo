@@ -63,7 +63,7 @@ Console.WriteLine(numInvertido); */
 //-------------------EJERCICIO 2-------------------
 
 
-int dato = menu();
+/* int dato = menu();
 calculos(dato);
 
 
@@ -135,4 +135,32 @@ int multiplicacion(int a, int b){
 float division(int a, int b){
 
     return a/b;
-}
+} */
+
+
+
+
+//-------------------EJERCICIO 3-------------------
+
+
+Console.WriteLine("Ingrese un número: ");
+string num = Console.ReadLine();
+double numero = Convert.ToDouble(num);
+
+
+Console.WriteLine("El valor absoluto del número es: " + Math.Abs(numero));
+Console.WriteLine("El cuadrado del número es: " + Math.Pow(numero, 2));
+Console.WriteLine("La raíz cuadrada del número es: " + Math.Sqrt(numero));
+Console.WriteLine("El seno del número es: " + Math.Sin(numero));
+Console.WriteLine("El coseno del número es: " + Math.Cos(numero));
+Console.WriteLine("La parte entera del número es: " + Math.Truncate(numero));
+
+
+Console.WriteLine("Ingrese otro número: ");
+string num1 = Console.ReadLine();
+Console.WriteLine("Ingrese un número más: ");
+string num2 = Console.ReadLine();
+
+
+Console.WriteLine("El número máximo entre ambos números es: " + Math.Max(Convert.ToInt32(num1), Convert.ToInt32(num2)));
+Console.WriteLine("El número mínimo entre ambos números es: " + Math.Min(Convert.ToInt32(num1), Convert.ToInt32(num2)));
